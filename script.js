@@ -74,13 +74,11 @@ function addToCarritoItem (e){
     addItemCarrito(newItem)
 }
 function addItemCarrito(newItem){
-    const alert = document.querySelector('.alert');
     
-
    setTimeout(function() {
-       alert.classList.add('hide')
-   }, 2000)
-   alert.classList.remove('hide')
+    swal("Felicidades!!!", " Tu producto a sido añadido al carrito", "success");
+   })
+  //Producto añadido al carrito
 
     const imputElemento = tbody.getElementsByClassName('input__elemento')
 
